@@ -243,6 +243,13 @@ public class GameController {
     }
 
 
+    /**
+     * ...
+     *
+     * @author Oskar Lolk Larsen,  s215717
+     *
+     */
+
     class ImpossibleMoveException extends Exception {
 
         private Player player;
@@ -273,6 +280,13 @@ public class GameController {
  */
 
 
+    /**
+     * ...
+     *
+     * @author Oskar Lolk Larsen,  s215717
+     *
+     */
+
     // TODO Assignment V2
     public void moveForward(@NotNull Player player) {
         if (player.board == board) {
@@ -292,6 +306,13 @@ public class GameController {
         }
     }
 
+    /**
+     * ...
+     *
+     * @author Oskar Lolk Larsen,  s215717
+     *
+     */
+
     private void moveToSpace(
             @NotNull Player player,
             @NotNull Space space,
@@ -308,8 +329,6 @@ public class GameController {
         }
         player.setSpace(space);
     }
-
-
 
 
     // TODO Assignment V2
