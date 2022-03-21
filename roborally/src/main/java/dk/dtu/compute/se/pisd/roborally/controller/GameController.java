@@ -236,6 +236,9 @@ public class GameController {
                 case FAST_FORWARD:
                     this.fastForward(player);
                     break;
+                case U_TURN:
+                    this.uTurn(player);
+                    break;
                 default:
                     // DO NOTHING (for now)
             }
@@ -263,8 +266,8 @@ public class GameController {
 
     // TODO Assignment V2
     public void turnRight(@NotNull Player player) {
-if(player !=null && player.board == board){
-    player.setHeading(player.getHeading().next());
+        if(player !=null && player.board == board){
+            player.setHeading(player.getHeading().next());
         }
     }
 
@@ -274,6 +277,14 @@ if(player !=null && player.board == board){
             player.setHeading(player.getHeading().prev());
         }
     }
+    /**@author Peter Møller*/
+    public void uTurn(@NotNull Player player) {
+        if(player !=null && player.board == board){
+            player.setHeading(player.getHeading().next().next());
+        }
+    }
+
+
 
     public boolean moveCards(@NotNull CommandCardField source, @NotNull CommandCardField target) {
         CommandCard sourceCard = source.getCard();
