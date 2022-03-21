@@ -4,35 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2852cad-b35f-4c1f-9a7e-3f79e569b46e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_19_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_protobuf_protobuf_java_2_6_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_annotations_23_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_4_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_4_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_4_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_4_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_base_15_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_base_win_15_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_15_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_win_15_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_15_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_win_15_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/roborally/src/main/java/dk/dtu/compute/se/pisd/roborally/controller/FieldAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/roborally/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/roborally/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/roborally/roborally.iml" beforeDir="false" afterPath="$PROJECT_DIR$/roborally/roborally.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/roborally/src/main/java/dk/dtu/compute/se/pisd/roborally/model/Space.java" beforeDir="false" afterPath="$PROJECT_DIR$/roborally/src/main/java/dk/dtu/compute/se/pisd/roborally/model/Space.java" afterDir="false" />
-    </list>
+    <list default="true" id="e2852cad-b35f-4c1f-9a7e-3f79e569b46e" name="Changes" comment="tegnet væg på alt syd" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,12 +17,10 @@
       </list>
     </option>
   </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="master" />
+  </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="wall-feature" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="26hEsRS6OrevVOeuHlhDa5c199y" />
@@ -65,14 +35,17 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../roborally-1.4.1a" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/roborally" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="dk.dtu.compute.se.pisd.roborally.model" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\chris\Desktop\roborallyMV\roborally" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="dk.dtu.compute.se.pisd.roborally" />
+      <recent name="dk.dtu.compute.se.pisd.roborally.controller" />
     </key>
   </component>
   <component name="RunManager">
@@ -91,7 +64,6 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.StartRoboRally" />
         <item itemvalue="Application.StartRoboRally" />
       </list>
     </recent_temporary>
@@ -113,14 +85,28 @@
       <option name="project" value="LOCAL" />
       <updated>1647871228721</updated>
     </task>
-    <task id="LOCAL-00002" summary="wall branch">
-      <created>1647871442245</created>
+    <task id="LOCAL-00002" summary="tegnet væg på alt syd">
+      <created>1647899890934</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1647871442245</updated>
+      <updated>1647899890934</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="tegnet væg på alt syd">
+      <created>1647899906035</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1647899906035</updated>
+    </task>
+    <task id="LOCAL-00004" summary="tegnet væg på alt syd">
+      <created>1647900607496</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1647900607496</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,10 +122,11 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="maven open javafx fix" />
-    <MESSAGE value="wall branch" />
-    <option name="LAST_COMMIT_MESSAGE" value="wall branch" />
+    <MESSAGE value="tegnet væg på alt syd" />
+    <option name="LAST_COMMIT_MESSAGE" value="tegnet væg på alt syd" />
   </component>
 </project>

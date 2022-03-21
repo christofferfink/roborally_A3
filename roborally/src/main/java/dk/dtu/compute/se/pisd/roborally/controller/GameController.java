@@ -279,7 +279,7 @@ public class GameController {
             Space space = player.getSpace();
             Heading heading = player.getHeading();
 
-            Space target = board.getNeighbour(space, heading);
+            Space target = board.getNeighbour(space,heading);
             if(target != null) {
                 try {
                     moveToSpace(player,target,heading);

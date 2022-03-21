@@ -27,9 +27,12 @@ import dk.dtu.compute.se.pisd.roborally.model.Player;
 import dk.dtu.compute.se.pisd.roborally.model.Space;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
+import javafx.scene.layout.Pane;
 import javafx.scene.layout.StackPane;
 import javafx.scene.paint.Color;
+import javafx.scene.shape.Line;
 import javafx.scene.shape.Polygon;
+import javafx.scene.shape.Rectangle;
 import javafx.scene.shape.StrokeLineCap;
 import org.jetbrains.annotations.NotNull;
 
@@ -91,10 +94,29 @@ public class SpaceView extends StackPane implements ViewObserver {
         }
     }
 
+    /**
+     *
+     * @author Christoffer Fink, s205449
+     * lige pt har vi kun fået tegnet en streg syd på, men samme metode bruges når vi skal tegne mere nøjagtigt hvor på banen dx
+     */
     @Override
     public void updateView(Subject subject) {
         if (subject == this.space) {
             updatePlayer();
+            Pane pane = new Pane();
+            Rectangle rectangle =
+                    new Rectangle(0.0, 0.0, SPACE_WIDTH, SPACE_HEIGHT);
+            rectangle.setFill(Color.TRANSPARENT);
+            pane.getChildren().add(rectangle);
+//south
+            Line line =
+                    new Line(2, SPACE_HEIGHT-2,
+                            SPACE_WIDTH-2, SPACE_HEIGHT-2);
+            line.setStroke(Color.RED);
+            line.setStrokeWidth(5);
+            pane.getChildren().add(line);
+            this.getChildren().add(pane);
+
         }
     }
 
