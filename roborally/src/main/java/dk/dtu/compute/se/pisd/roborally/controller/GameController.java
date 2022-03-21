@@ -290,9 +290,9 @@ public class GameController {
     /**@author Peter Møller*/
     public void backUp(@NotNull Player player) {
         if(player !=null && player.board == board){
-            player.setHeading(player.getHeading().next().next());
+            uTurn(player);
             moveForward(player);
-            player.setHeading(player.getHeading().next().next());
+            uTurn(player);
         }
     }
 
