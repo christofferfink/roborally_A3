@@ -236,6 +236,9 @@ public class GameController {
                 case FAST_FORWARD:
                     this.fastForward(player);
                     break;
+                case FASTER_FORWARD:
+                    this.fasterForward(player);
+                    break;
                 case U_TURN:
                     this.uTurn(player);
                     break;
@@ -294,6 +297,12 @@ public class GameController {
             moveForward(player);
             uTurn(player);
         }
+    }
+
+    public void fasterForward(@NotNull Player player) {
+        moveForward(player);
+        moveForward(player);
+        moveForward(player);
     }
 
 
