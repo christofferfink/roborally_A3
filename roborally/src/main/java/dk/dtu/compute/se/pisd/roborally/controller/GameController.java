@@ -250,35 +250,26 @@ public class GameController {
      *
      */
 
-    class ImpossibleMoveException extends Exception {
+    class moveNotPossibleException extends Exception {
 
-        private Player player;
         private Space space;
+
         private Heading heading;
 
-        public ImpossibleMoveException(Player player, Space space, Heading heading) {
-            super("Move impossible");
-            this.player = player;
-            this.space = space;
+        private Player player;
+
+
+
+        public moveNotPossibleException(Player player, Space space, Heading heading) {
+            super("Move is not possible");
+
             this.heading = heading;
+
+            this.space = space;
+
+            this.player = player;
         }
     }
-/*
-    // TODO Assignment V2
-    public void moveForward(@NotNull Player player) {
-        if ( board != null && player != null && player.board == board) {
-            Space currentSpace = player.getSpace();
-            if (currentSpace != null) {
-                Space newSpace = board.getNeighbour(currentSpace,player.getHeading());
-                if (newSpace != null && newSpace.getPlayer()== null){
-                    player.setSpace(newSpace);
-                }
-            }
-        }
-    }
-
- */
-
 
     /**
      * ...
@@ -287,22 +278,16 @@ public class GameController {
      *
      */
 
-    // TODO Assignment V2
-    public void moveForward(@NotNull Player player) {
-        if (player.board == board) {
+    public void moveForward(Player player) {
+        if (board != null && player != null && player.board == board) {Heading heading = player.getHeading();
             Space space = player.getSpace();
-            Heading heading = player.getHeading();
-
             Space target = board.getNeighbour(space, heading);
             if(target != null) {
                 try {
-                    moveToSpace(player,target,heading);
-                } catch (ImpossibleMoveException e){
-                    // Nothing happens here for now
+                    movePlayerToSpace(player,target,heading);
+                } catch (moveNotPossibleException ignored){
                 }
             }
-
-
         }
     }
 
@@ -313,18 +298,20 @@ public class GameController {
      *
      */
 
-    private void moveToSpace(
-            @NotNull Player player,
-            @NotNull Space space,
-            @NotNull Heading heading) throws ImpossibleMoveException {
-
+    private void movePlayerToSpace(@NotNull Player player, @NotNull Space space, @NotNull Heading heading)
+            throws moveNotPossibleException {
         Player other = space.getPlayer();
         if (other !=null) {
-            Space target = board.getNeighbour(space, heading);
+            Space target = board.getNeighbour(space,
+                    heading);
             if (target != null) {
-                moveToSpace(other, target, heading);
+                movePlayerToSpace(other,
+                        target,
+                        heading);
             } else  {
-                throw new ImpossibleMoveException(player, space, heading);
+                throw new moveNotPossibleException(player,
+                        space,
+                        heading);
             }
         }
         player.setSpace(space);
