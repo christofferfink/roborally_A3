@@ -243,6 +243,8 @@ public class GameController {
     }
 
 
+
+
     /**
      * ...
      *
@@ -258,7 +260,13 @@ public class GameController {
 
         private Player player;
 
-
+        /**
+         * Here we create the Exception moveIsNotPossible, but for now, nothing happens when thrown
+         *
+         * @param player
+         * @param space
+         * @param heading
+         */
 
         public moveNotPossibleException(Player player, Space space, Heading heading) {
             super("Move is not possible");
@@ -276,6 +284,12 @@ public class GameController {
      *
      * @author Oskar Lolk Larsen,  s215717
      *
+     */
+
+    /**
+     * The moveForward has been slightly modified with a catch statement at the bottom, however it has been set to be ignored since it doesn't do anything
+     *
+     * @param player
      */
 
     public void moveForward(Player player) {
@@ -298,6 +312,16 @@ public class GameController {
      *
      */
 
+    /**
+     *
+     * The movePlayerToSpace which relocates the pushed player to the next space which the pushing player is heading.
+     * If none of the criteria met the moveNotPossibleException will be thrown.
+     *
+     * @param player
+     * @param space
+     * @param heading
+     * @throws moveNotPossibleException
+     */
     private void movePlayerToSpace(@NotNull Player player, @NotNull Space space, @NotNull Heading heading)
             throws moveNotPossibleException {
         Player other = space.getPlayer();
