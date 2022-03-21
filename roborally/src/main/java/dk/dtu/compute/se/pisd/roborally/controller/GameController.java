@@ -239,6 +239,9 @@ public class GameController {
                 case U_TURN:
                     this.uTurn(player);
                     break;
+                case BACK_UP:
+                    this.backUp(player);
+                    break;
                 default:
                     // DO NOTHING (for now)
             }
@@ -284,6 +287,14 @@ public class GameController {
         }
     }
 
+    /**@author Peter Møller*/
+    public void backUp(@NotNull Player player) {
+        if(player !=null && player.board == board){
+            player.setHeading(player.getHeading().next().next());
+            moveForward(player);
+            player.setHeading(player.getHeading().next().next());
+        }
+    }
 
 
     public boolean moveCards(@NotNull CommandCardField source, @NotNull CommandCardField target) {
