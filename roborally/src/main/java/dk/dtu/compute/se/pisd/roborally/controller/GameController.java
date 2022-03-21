@@ -236,6 +236,15 @@ public class GameController {
                 case FAST_FORWARD:
                     this.fastForward(player);
                     break;
+                case FASTER_FORWARD:
+                    this.fasterForward(player);
+                    break;
+                case U_TURN:
+                    this.uTurn(player);
+                    break;
+                case BACK_UP:
+                    this.backUp(player);
+                    break;
                 default:
                     // DO NOTHING (for now)
             }
@@ -361,6 +370,28 @@ public class GameController {
             player.setHeading(player.getHeading().prev());
         }
     }
+    /**@author Peter Møller*/
+    public void uTurn(@NotNull Player player) {
+        if(player !=null && player.board == board){
+            player.setHeading(player.getHeading().next().next());
+        }
+    }
+
+    /**@author Peter Møller*/
+    public void backUp(@NotNull Player player) {
+        if(player !=null && player.board == board){
+            uTurn(player);
+            moveForward(player);
+            uTurn(player);
+        }
+    }
+
+    public void fasterForward(@NotNull Player player) {
+        moveForward(player);
+        moveForward(player);
+        moveForward(player);
+    }
+
 
     public boolean moveCards(@NotNull CommandCardField source, @NotNull CommandCardField target) {
         CommandCard sourceCard = source.getCard();
