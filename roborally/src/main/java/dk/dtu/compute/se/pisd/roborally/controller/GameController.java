@@ -58,15 +58,15 @@ public class GameController {
             currentPlayer.setSpace(space);
         else return;
 
-            int currentPlayerNumber = board.getPlayerNumber(currentPlayer);
-            Player nextPlayer = board.getPlayer((currentPlayerNumber + 1) % board.getPlayersNumber());
-            board.setCurrentPlayer(nextPlayer);
+        int currentPlayerNumber = board.getPlayerNumber(currentPlayer);
+        Player nextPlayer = board.getPlayer((currentPlayerNumber + 1) % board.getPlayersNumber());
+        board.setCurrentPlayer(nextPlayer);
 
 
 
-            board.setCounter(board.getCounter() + 1);
+        board.setCounter(board.getCounter() + 1);
 
-        }
+    }
 
 
     // XXX: V2
@@ -192,8 +192,8 @@ public class GameController {
     public void executeCommandOptionAndContinue(@NotNull Command option){
         Player currentPlayer = board.getCurrentPlayer();
         if(currentPlayer != null &&
-        board.getPhase()== Phase.PLAYER_INTERACTION &&
-        option !=null);
+                board.getPhase()== Phase.PLAYER_INTERACTION &&
+                option !=null);
         board.setPhase(Phase.ACTIVATION);
         executeCommand(currentPlayer, option);
 
@@ -242,29 +242,86 @@ public class GameController {
         }
     }
 
+
+    class ImpossibleMoveException extends Exception {
+
+        private Player player;
+        private Space space;
+        private Heading heading;
+
+        public ImpossibleMoveException(Player player, Space space, Heading heading) {
+            super("Move impossible");
+            this.player = player;
+            this.space = space;
+            this.heading = heading;
+        }
+    }
+/*
     // TODO Assignment V2
     public void moveForward(@NotNull Player player) {
-    if ( board != null && player != null && player.board == board) {
-        Space currentSpace = player.getSpace();
-        if (currentSpace != null) {
-            Space newSpace = board.getNeighbour(currentSpace,player.getHeading());
-            if (newSpace != null && newSpace.getPlayer()== null){
-                player.setSpace(newSpace);
+        if ( board != null && player != null && player.board == board) {
+            Space currentSpace = player.getSpace();
+            if (currentSpace != null) {
+                Space newSpace = board.getNeighbour(currentSpace,player.getHeading());
+                if (newSpace != null && newSpace.getPlayer()== null){
+                    player.setSpace(newSpace);
+                }
             }
         }
     }
+
+ */
+
+
+    // TODO Assignment V2
+    public void moveForward(@NotNull Player player) {
+        if (player.board == board) {
+            Space space = player.getSpace();
+            Heading heading = player.getHeading();
+
+            Space target = board.getNeighbour(space, heading);
+            if(target != null) {
+                try {
+                    moveToSpace(player,target,heading);
+                } catch (ImpossibleMoveException e){
+                    // Nothing happens here for now
+                }
+            }
+
+
+        }
     }
+
+    private void moveToSpace(
+            @NotNull Player player,
+            @NotNull Space space,
+            @NotNull Heading heading) throws ImpossibleMoveException {
+
+        Player other = space.getPlayer();
+        if (other !=null) {
+            Space target = board.getNeighbour(space, heading);
+            if (target != null) {
+                moveToSpace(other, target, heading);
+            } else  {
+                throw new ImpossibleMoveException(player, space, heading);
+            }
+        }
+        player.setSpace(space);
+    }
+
+
+
 
     // TODO Assignment V2
     public void fastForward(@NotNull Player player) {
-   moveForward(player);
-   moveForward(player);
+        moveForward(player);
+        moveForward(player);
     }
 
     // TODO Assignment V2
     public void turnRight(@NotNull Player player) {
-if(player !=null && player.board == board){
-    player.setHeading(player.getHeading().next());
+        if(player !=null && player.board == board){
+            player.setHeading(player.getHeading().next());
         }
     }
 
