@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2852cad-b35f-4c1f-9a7e-3f79e569b46e" name="Changes" comment="tegnet væg på alt syd" />
+    <list default="true" id="e2852cad-b35f-4c1f-9a7e-3f79e569b46e" name="Changes" comment="skubbemetode færdiggjort">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/roborally/src/main/java/dk/dtu/compute/se/pisd/roborally/controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/roborally/src/main/java/dk/dtu/compute/se/pisd/roborally/controller/GameController.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,11 +21,16 @@
       </list>
     </option>
   </component>
-  <component name="Git.Merge.Settings">
-    <option name="BRANCH" value="master" />
-  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="26hEsRS6OrevVOeuHlhDa5c199y" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -35,17 +44,14 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/roborally" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../roborally-1.4.1a" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="dk.dtu.compute.se.pisd.roborally.model" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\chris\Desktop\roborallyMV\roborally" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="dk.dtu.compute.se.pisd.roborally.controller" />
+      <recent name="dk.dtu.compute.se.pisd.roborally" />
     </key>
   </component>
   <component name="RunManager">
@@ -64,6 +70,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.StartRoboRally" />
         <item itemvalue="Application.StartRoboRally" />
       </list>
     </recent_temporary>
@@ -85,28 +92,35 @@
       <option name="project" value="LOCAL" />
       <updated>1647871228721</updated>
     </task>
-    <task id="LOCAL-00002" summary="tegnet væg på alt syd">
-      <created>1647899890934</created>
+    <task id="LOCAL-00002" summary="wall branch">
+      <created>1647871442245</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1647899890934</updated>
+      <updated>1647871442245</updated>
     </task>
-    <task id="LOCAL-00003" summary="tegnet væg på alt syd">
-      <created>1647899906035</created>
+    <task id="LOCAL-00003" summary="skubbemetode færdiggjort">
+      <created>1647893976066</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1647899906035</updated>
+      <updated>1647893976066</updated>
     </task>
-    <task id="LOCAL-00004" summary="tegnet væg på alt syd">
-      <created>1647900607496</created>
+    <task id="LOCAL-00004" summary="skubbemetode færdiggjort">
+      <created>1647894360669</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1647900607496</updated>
+      <updated>1647894360669</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="skubbemetode færdiggjort">
+      <created>1647894392635</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1647894392635</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -122,11 +136,11 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="maven open javafx fix" />
-    <MESSAGE value="tegnet væg på alt syd" />
-    <option name="LAST_COMMIT_MESSAGE" value="tegnet væg på alt syd" />
+    <MESSAGE value="wall branch" />
+    <MESSAGE value="skubbemetode færdiggjort" />
+    <option name="LAST_COMMIT_MESSAGE" value="skubbemetode færdiggjort" />
   </component>
 </project>

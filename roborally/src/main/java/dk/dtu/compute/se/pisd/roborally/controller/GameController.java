@@ -243,73 +243,103 @@ public class GameController {
     }
 
 
-    class ImpossibleMoveException extends Exception {
 
-        private Player player;
+
+    /**
+     * ...
+     *
+     * @author Oskar Lolk Larsen,  s215717
+     *
+     */
+
+    class moveNotPossibleException extends Exception {
+
         private Space space;
+
         private Heading heading;
 
-        public ImpossibleMoveException(Player player, Space space, Heading heading) {
-            super("Move impossible");
-            this.player = player;
-            this.space = space;
+        private Player player;
+
+        /**
+         * Here we create the Exception moveIsNotPossible, but for now, nothing happens when thrown
+         *
+         * @param player
+         * @param space
+         * @param heading
+         */
+
+        public moveNotPossibleException(Player player, Space space, Heading heading) {
+            super("Move is not possible");
+
             this.heading = heading;
-        }
-    }
-/*
-    // TODO Assignment V2
-    public void moveForward(@NotNull Player player) {
-        if ( board != null && player != null && player.board == board) {
-            Space currentSpace = player.getSpace();
-            if (currentSpace != null) {
-                Space newSpace = board.getNeighbour(currentSpace,player.getHeading());
-                if (newSpace != null && newSpace.getPlayer()== null){
-                    player.setSpace(newSpace);
-                }
-            }
+
+            this.space = space;
+
+            this.player = player;
         }
     }
 
- */
+    /**
+     * ...
+     *
+     * @author Oskar Lolk Larsen,  s215717
+     *
+     */
 
+    /**
+     * The moveForward has been slightly modified with a catch statement at the bottom, however it has been set to be ignored since it doesn't do anything
+     *
+     * @param player
+     */
 
-    // TODO Assignment V2
-    public void moveForward(@NotNull Player player) {
-        if (player.board == board) {
+    public void moveForward(Player player) {
+        if (board != null && player != null && player.board == board) {Heading heading = player.getHeading();
             Space space = player.getSpace();
-            Heading heading = player.getHeading();
-
-            Space target = board.getNeighbour(space,heading);
+            Space target = board.getNeighbour(space, heading);
             if(target != null) {
                 try {
-                    moveToSpace(player,target,heading);
-                } catch (ImpossibleMoveException e){
-                    // Nothing happens here for now
+                    movePlayerToSpace(player,target,heading);
+                } catch (moveNotPossibleException ignored){
                 }
             }
-
-
         }
     }
 
-    private void moveToSpace(
-            @NotNull Player player,
-            @NotNull Space space,
-            @NotNull Heading heading) throws ImpossibleMoveException {
+    /**
+     * ...
+     *
+     * @author Oskar Lolk Larsen,  s215717
+     *
+     */
 
+    /**
+     *
+     * The movePlayerToSpace which relocates the pushed player to the next space which the pushing player is heading.
+     * If none of the criteria met the moveNotPossibleException will be thrown.
+     *
+     * @param player
+     * @param space
+     * @param heading
+     * @throws moveNotPossibleException
+     */
+    private void movePlayerToSpace(@NotNull Player player, @NotNull Space space, @NotNull Heading heading)
+            throws moveNotPossibleException {
         Player other = space.getPlayer();
         if (other !=null) {
-            Space target = board.getNeighbour(space, heading);
+            Space target = board.getNeighbour(space,
+                    heading);
             if (target != null) {
-                moveToSpace(other, target, heading);
+                movePlayerToSpace(other,
+                        target,
+                        heading);
             } else  {
-                throw new ImpossibleMoveException(player, space, heading);
+                throw new moveNotPossibleException(player,
+                        space,
+                        heading);
             }
         }
         player.setSpace(space);
     }
-
-
 
 
     // TODO Assignment V2
