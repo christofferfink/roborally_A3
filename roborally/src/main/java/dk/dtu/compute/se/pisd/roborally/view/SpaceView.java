@@ -96,7 +96,7 @@ public class SpaceView extends StackPane implements ViewObserver {
 
     /**
      * @author Christoffer Fink, s205449
-     * lige pt har vi kun fået tegnet en streg syd på, men samme metode bruges når vi skal tegne mere nøjagtigt hvor på banen dx
+     * hvor og hvorledes skal sættes ind med gson senere
      */
     @Override
     public void updateView(Subject subject) {

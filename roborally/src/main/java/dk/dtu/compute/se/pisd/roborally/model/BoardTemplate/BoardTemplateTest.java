@@ -5,7 +5,9 @@ import dk.dtu.compute.se.pisd.roborally.model.Heading;
 
 import java.util.ArrayList;
 import java.util.List;
-
+/**
+ * Christoffer Fink, s205449
+ */
 public class BoardTemplateTest {
     public int x;
     public int y;
