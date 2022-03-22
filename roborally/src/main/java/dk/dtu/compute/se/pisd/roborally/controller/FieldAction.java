@@ -1,5 +1,7 @@
 package dk.dtu.compute.se.pisd.roborally.controller;
 
+import dk.dtu.compute.se.pisd.roborally.model.Space;
+
 import java.awt.*;
 import java.util.ArrayList;
 
@@ -8,4 +10,6 @@ import java.util.ArrayList;
  */
 public abstract class FieldAction {
 
+ public abstract boolean doAction(
+         GameController gameController, Space space);
  }

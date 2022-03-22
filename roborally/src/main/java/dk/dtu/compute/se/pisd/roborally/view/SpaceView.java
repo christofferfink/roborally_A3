@@ -82,20 +82,19 @@ public class SpaceView extends StackPane implements ViewObserver {
         if (player != null) {
             Polygon arrow = new Polygon(0.0, 0.0,
                     10.0, 20.0,
-                    20.0, 0.0 );
+                    20.0, 0.0);
             try {
                 arrow.setFill(Color.valueOf(player.getColor()));
             } catch (Exception e) {
                 arrow.setFill(Color.MEDIUMPURPLE);
             }
 
-            arrow.setRotate((90*player.getHeading().ordinal())%360);
+            arrow.setRotate((90 * player.getHeading().ordinal()) % 360);
             this.getChildren().add(arrow);
         }
     }
 
     /**
-     *
      * @author Christoffer Fink, s205449
      * lige pt har vi kun fået tegnet en streg syd på, men samme metode bruges når vi skal tegne mere nøjagtigt hvor på banen dx
      */
@@ -110,8 +109,9 @@ public class SpaceView extends StackPane implements ViewObserver {
             pane.getChildren().add(rectangle);
 //south
             Line line =
-                    new Line(2, SPACE_HEIGHT-2,
-                            SPACE_WIDTH-2, SPACE_HEIGHT-2);
+                    new Line(2, SPACE_HEIGHT - 2,
+                            SPACE_WIDTH - 2, SPACE_HEIGHT - 2);
+
             line.setStroke(Color.RED);
             line.setStrokeWidth(5);
             pane.getChildren().add(line);
@@ -119,5 +119,4 @@ public class SpaceView extends StackPane implements ViewObserver {
 
         }
     }
-
 }
