@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2852cad-b35f-4c1f-9a7e-3f79e569b46e" name="Changes" comment="rebasing" />
+    <list default="true" id="e2852cad-b35f-4c1f-9a7e-3f79e569b46e" name="Changes" comment="skubbemetode færdiggjort" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,6 +24,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -40,9 +41,6 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../roborally-1.4.1a" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -101,7 +99,6 @@
       <workItem from="1647867626044" duration="313000" />
       <workItem from="1647868527241" duration="6026000" />
       <workItem from="1647874970685" duration="52000" />
-      <workItem from="1647935511853" duration="297000" />
     </task>
     <task id="LOCAL-00001" summary="maven open javafx fix">
       <created>1647871228721</created>
@@ -110,12 +107,12 @@
       <option name="project" value="LOCAL" />
       <updated>1647871228721</updated>
     </task>
-    <task id="LOCAL-00002" summary="rebasing">
-      <created>1647936353505</created>
+    <task id="LOCAL-00002" summary="wall branch">
+      <created>1647871442245</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1647936353505</updated>
+      <updated>1647871442245</updated>
     </task>
     <task id="LOCAL-00003" summary="skubbemetode færdiggjort">
       <created>1647893976066</created>
@@ -138,7 +135,7 @@
       <option name="project" value="LOCAL" />
       <updated>1647894392635</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -160,7 +157,6 @@
     <MESSAGE value="maven open javafx fix" />
     <MESSAGE value="wall branch" />
     <MESSAGE value="skubbemetode færdiggjort" />
-    <MESSAGE value="rebasing" />
-    <option name="LAST_COMMIT_MESSAGE" value="rebasing" />
+    <option name="LAST_COMMIT_MESSAGE" value="skubbemetode færdiggjort" />
   </component>
 </project>
