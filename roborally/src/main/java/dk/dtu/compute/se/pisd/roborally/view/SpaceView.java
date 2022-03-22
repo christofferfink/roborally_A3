@@ -36,6 +36,8 @@ import javafx.scene.shape.Rectangle;
 import javafx.scene.shape.StrokeLineCap;
 import org.jetbrains.annotations.NotNull;
 
+import java.awt.*;
+
 /**
  * ...
  *
