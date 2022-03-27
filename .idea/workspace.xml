@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2852cad-b35f-4c1f-9a7e-3f79e569b46e" name="Changes" comment="skubbemetode færdiggjort">
+    <list default="true" id="e2852cad-b35f-4c1f-9a7e-3f79e569b46e" name="Changes" comment="readme tilføjet">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/roborally/target/classes/dk/dtu/compute/se/pisd/roborally/controller/GameController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/roborally/target/classes/dk/dtu/compute/se/pisd/roborally/controller/GameController$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/roborally/target/classes/dk/dtu/compute/se/pisd/roborally/controller/GameController$moveNotPossibleException.class" beforeDir="false" afterPath="$PROJECT_DIR$/roborally/target/classes/dk/dtu/compute/se/pisd/roborally/controller/GameController$moveNotPossibleException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/roborally/target/classes/dk/dtu/compute/se/pisd/roborally/controller/GameController.class" beforeDir="false" afterPath="$PROJECT_DIR$/roborally/target/classes/dk/dtu/compute/se/pisd/roborally/controller/GameController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/roborally/target/classes/dk/dtu/compute/se/pisd/roborally/model/Command.class" beforeDir="false" afterPath="$PROJECT_DIR$/roborally/target/classes/dk/dtu/compute/se/pisd/roborally/model/Command.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/roborally/target/classes/dk/dtu/compute/se/pisd/roborally/model/Space.class" beforeDir="false" afterPath="$PROJECT_DIR$/roborally/target/classes/dk/dtu/compute/se/pisd/roborally/model/Space.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/roborally/target/classes/dk/dtu/compute/se/pisd/roborally/view/SpaceView.class" beforeDir="false" afterPath="$PROJECT_DIR$/roborally/target/classes/dk/dtu/compute/se/pisd/roborally/view/SpaceView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/roborally/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/roborally/readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,10 +42,11 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../roborally-1.4.1a" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/roborally" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\oskar\IdeaProjects\roborally_A3\roborally" />
       <recent name="C:\Users\chris\Desktop\roborallyMV\roborally" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -114,12 +110,12 @@
       <option name="project" value="LOCAL" />
       <updated>1647871228721</updated>
     </task>
-    <task id="LOCAL-00002" summary="wall branch">
-      <created>1647871442245</created>
+    <task id="LOCAL-00002" summary="readme tilføjet">
+      <created>1647943020865</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1647871442245</updated>
+      <updated>1647943020865</updated>
     </task>
     <task id="LOCAL-00003" summary="skubbemetode færdiggjort">
       <created>1647893976066</created>
@@ -142,7 +138,7 @@
       <option name="project" value="LOCAL" />
       <updated>1647894392635</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,6 +160,7 @@
     <MESSAGE value="maven open javafx fix" />
     <MESSAGE value="wall branch" />
     <MESSAGE value="skubbemetode færdiggjort" />
-    <option name="LAST_COMMIT_MESSAGE" value="skubbemetode færdiggjort" />
+    <MESSAGE value="readme tilføjet" />
+    <option name="LAST_COMMIT_MESSAGE" value="readme tilføjet" />
   </component>
 </project>
